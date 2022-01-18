@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: skin_DIFF
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _DIRECTIONAL_LIGHT _EMISSION _GLOSSYREFLECTIONS_OFF _HOVER_LIGHT
-    _METALLICGLOSSMAP _NORMALMAP _SPECULAR_HIGHLIGHTS
+  m_ShaderKeywords: _DIRECTIONAL_LIGHT _EMISSION _HOVER_LIGHT _METALLICGLOSSMAP _NORMALMAP
+    _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SPECULAR_HIGHLIGHTS
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -107,9 +107,9 @@ Material:
     - _FadeCompleteDistance: 0.5
     - _FadeMinValue: 0
     - _FluentLightIntensity: 1
-    - _GlossMapScale: 0.092
+    - _GlossMapScale: 0.315
     - _Glossiness: 0.347
-    - _GlossyReflections: 0
+    - _GlossyReflections: 1
     - _HoverLight: 1
     - _IgnoreZScale: 0
     - _IndependentCorners: 0
@@ -140,7 +140,7 @@ Material:
     - _RoundCornerRadius: 0.25
     - _RoundCorners: 0
     - _Smoothness: 0.5
-    - _SmoothnessTextureChannel: 0
+    - _SmoothnessTextureChannel: 1
     - _SpecularHighlights: 1
     - _SphericalHarmonics: 0
     - _SrcBlend: 1
