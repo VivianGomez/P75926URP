@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.74642223, g: 0.79030883, b: 0.8207547, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.3
+  m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.045187056, g: 0.12876667, b: 0.23983514, a: 0.3}
+  m_IndirectSpecularColor: {r: 0.07531176, g: 0.2146111, b: 0.39972523, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14675,7 +14675,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 3.4e-44, z: 8.11e-43, w: 1.6114618e-38}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -14687,13 +14687,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919015075}
-  m_LocalRotation: {x: -0.44362402, y: 0.14812452, z: 0.37329945, w: -0.80118936}
-  m_LocalPosition: {x: -0.30999994, y: 0.667, z: 1.394}
+  m_LocalRotation: {x: 0.3998106, y: -0.06963108, z: -0.36148676, w: 0.8394226}
+  m_LocalPosition: {x: -1.345, y: -0.057, z: 1.837}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 370546475}
   m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 1476.889, y: 674.694, z: -425.813}
+  m_LocalEulerAnglesHint: {x: 1478.38, y: 1048.811, z: -417.693}
 --- !u!1 &921253631 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7687313680222718102, guid: 59016385f268ef34cbb5bfb36a354470,
@@ -18441,7 +18441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1222860484
 Transform:
   m_ObjectHideFlags: 0
@@ -22724,11 +22724,27 @@ PrefabInstance:
       objectReference: {fileID: 79205785}
     - target: {fileID: 1253402722, guid: 91ece7ec5e69a2c4e936d7bea677939f, type: 3}
       propertyPath: m_Intensity
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1253402722, guid: 91ece7ec5e69a2c4e936d7bea677939f, type: 3}
       propertyPath: m_SpotAngle
       value: 73.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253402722, guid: 91ece7ec5e69a2c4e936d7bea677939f, type: 3}
+      propertyPath: m_Lightmapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253402722, guid: 91ece7ec5e69a2c4e936d7bea677939f, type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 3.7780085e+22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253402722, guid: 91ece7ec5e69a2c4e936d7bea677939f, type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: -11.062523
+      objectReference: {fileID: 0}
+    - target: {fileID: 1253402722, guid: 91ece7ec5e69a2c4e936d7bea677939f, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: 6e-45
       objectReference: {fileID: 0}
     - target: {fileID: 1454989162, guid: 91ece7ec5e69a2c4e936d7bea677939f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24540,9 +24556,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5618803681488636980, guid: be9697196b1e4c8438c78a903361ec4d,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 596640390765eed449094ede1cb50e4c, type: 2}
+    - target: {fileID: 5618803681488636980, guid: be9697196b1e4c8438c78a903361ec4d,
+        type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: f8bf6b279720bd94cbaf9b4273651a22, type: 2}
+      objectReference: {fileID: 2100000, guid: 596640390765eed449094ede1cb50e4c, type: 2}
     - target: {fileID: 7489287890313216718, guid: be9697196b1e4c8438c78a903361ec4d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
