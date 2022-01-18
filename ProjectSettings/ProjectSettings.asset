@@ -134,7 +134,9 @@ PlayerSettings:
     16:9: 1
     Others: 1
   bundleVersion: 1.0
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: 1950667915019785203, guid: 5d44a8a332bfe5a4d983bb7158317558, type: 2}
+  - {fileID: 11400000, guid: 8bb863fd3b8ffa844a0eb0073b9469e8, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -152,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.oculus.HTv3
+    Android: com.oculus.HTv4
     Standalone: unity.DefaultCompany.BowlingAlleyWorlds
     Tizen: com.Company.ProductName
     iPhone: com.Company.ProductName
