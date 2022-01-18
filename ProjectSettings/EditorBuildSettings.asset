@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/VR/CuartoIngenieria.unity
     guid: 355a21579b97bec409f65d95ca823b7b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/VR_HT/InicioHT.unity
     guid: 2984cba4d70a2d249b8e39fb0316a360
   - enabled: 1

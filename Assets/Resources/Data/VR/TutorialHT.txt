@@ -130,11 +130,8 @@ TutorialScreen.ActivarMeshPalancas()
 
 :: Mover a 0 la palanca estribor
 Muy bien!
-Para terminar ¿estás listo para ir al cuarto de ingeniería?
-Para contestarme oprime el botón de tu mano izquierda
-Y vuelve a usar los gestos para sacar el rayo y seleccionar las opciones del menú.
 @
-[[Usar menu mano]]
+[[Recibir instrucción agarrar objeto]]
 {
 Simulator.MostrarRecordatorio(""; 0; HandlerPlcVelMpe)
 PlcVelMpe.EsVerde()
@@ -143,8 +140,6 @@ PlcVelMpe.EsVerde()
 PB.ChangeVal(0,80)
 Simulator.Esperar(2)
 TutorialScreen.DesactivarPalancas()
-TutorialScreen.ShowInstruction("handMenu")
-Simulator.Play("THT6-MenuUI")
 >	
 
 :: Finalizar[END]
@@ -196,4 +191,36 @@ HandMenu.DesactivarBtn()
 PlayerController.Play("NoEstoyListo")
 Simulator.Play("SiEstasListo")
 PB.ChangeVal(1)
+>
+
+:: Recibir instrucción agarrar objeto
+Perfecto
+Ahora, toma la tarjeta roja y ponla en la zona resaltada de la mesa.
+Para hacerlo, agarra la tarjeta haciendo el gesto de pellizcar, como se muestra en la pantalla.
+@
+[[Poner tarjeta correcta]]
+{}
+<
+Simulator.MostrarIndicadorAviso(true)
+TutorialScreen.ShowInstruction("Grab")
+Simulator.Play("THTN-Grab")
+>	
+
+
+
+:: Poner tarjeta correcta
+Muy bien!
+Para terminar ¿estás listo para ir al cuarto de ingeniería?
+Para contestarme oprime el botón de tu mano izquierda
+Y vuelve a usar los gestos para sacar el rayo y seleccionar las opciones del menú.
+@
+[[Usar menu mano]]
+{
+Simulator.MostrarRecordatorio(""; 0; Tarjeta1)
+Tarjeta1.PonerEnConsola()
+}
+<
+Simulator.MostrarIndicadorAviso(false)
+TutorialScreen.ShowInstruction("handMenu")
+Simulator.Play("THT6-MenuUI")
 >

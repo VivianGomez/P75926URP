@@ -102,7 +102,7 @@ public class TutorialVRCtrl : MonoBehaviour
                 break;
             
             case "handMenu":
-                palancasTutorial.SetActive(false);
+                grabInstruction.SetActive(false);
                 handMenuTutorial.SetActive(true);
                 break;
 
@@ -134,18 +134,21 @@ public class TutorialVRCtrl : MonoBehaviour
                 break;
 
             case "Palancas":
-                grabInstruction.SetActive(false);
                 pressButtonTutorial.SetActive(false);   
                 palancasTutorial.SetActive(true);
-                grababbles.SetActive(false); 
                 break;
 
-            case "GrabObject":
-                pressButtonTutorial.SetActive(false);   
+            case "Grab":
+                palancasTutorial.SetActive(false);
                 grabInstruction.SetActive(true);
-                botoneras.SetActive(false); 
+                grababbles.SetActive(true); 
                 break;
         }
+    }
+
+    public void DesactivarGrabbables()
+    {
+        grababbles.SetActive(false); 
     }
 
     public void ActivarTP1()
