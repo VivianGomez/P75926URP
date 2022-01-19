@@ -204,6 +204,7 @@ Para hacerlo, agarra la tarjeta haciendo el gesto de pellizcar, como se muestra 
 Simulator.MostrarIndicadorAviso(true)
 TutorialScreen.ShowInstruction("Grab")
 Simulator.Play("THTN-Grab")
+TutorialScreen.ActivarGrabbables()
 >	
 
 
@@ -220,6 +221,7 @@ Simulator.MostrarRecordatorio(""; 0; Tarjeta1)
 Tarjeta1.PonerEnConsola()
 }
 <
+TutorialScreen.DesactivarGrabbables()
 Simulator.MostrarIndicadorAviso(false)
 TutorialScreen.ShowInstruction("handMenu")
 Simulator.Play("THT6-MenuUI")

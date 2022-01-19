@@ -112,7 +112,8 @@ public class TPLaserController : MonoBehaviour
         }
         else if(enableUISelection)
         {
-            curBtnSelected.GetComponent<Button>().onClick.Invoke();
+            if(curBtnSelected!= null)
+                curBtnSelected.GetComponent<Button>().onClick.Invoke();
         }
     }
 }

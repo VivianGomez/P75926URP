@@ -35,6 +35,10 @@ public class TutorialVRCtrl : MonoBehaviour
 
     public AudioClip hideSound;
 
+    public GameObject T1;
+    public GameObject T2;
+    public GameObject T3;
+
 
     void Start()
     {
@@ -103,10 +107,13 @@ public class TutorialVRCtrl : MonoBehaviour
             
             case "handMenu":
                 grabInstruction.SetActive(false);
+                grababbles.SetActive(false); 
                 handMenuTutorial.SetActive(true);
                 break;
 
             case "menuUI":
+                grabInstruction.SetActive(false);
+                grababbles.SetActive(false); 
                 handMenuTutorial.SetActive(false);
                 menuUI.SetActive(true);
                 break;
@@ -141,7 +148,6 @@ public class TutorialVRCtrl : MonoBehaviour
             case "Grab":
                 palancasTutorial.SetActive(false);
                 grabInstruction.SetActive(true);
-                grababbles.SetActive(true); 
                 break;
         }
     }
@@ -149,6 +155,14 @@ public class TutorialVRCtrl : MonoBehaviour
     public void DesactivarGrabbables()
     {
         grababbles.SetActive(false); 
+        T1.SetActive(false); 
+        T2.SetActive(false); 
+        T3.SetActive(false); 
+    }
+
+    public void ActivarGrabbables()
+    {
+        grababbles.SetActive(true); 
     }
 
     public void ActivarTP1()
@@ -186,11 +200,6 @@ public class TutorialVRCtrl : MonoBehaviour
             SceneManager.LoadScene("CuartoIngenieriaHT");
         }
         
-    }
-
-    public void ActivarGrabbables()
-    {
-        grababbles.SetActive(true); 
     }
 
     public void ActivarPalancas()
