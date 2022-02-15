@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0024980207, g: 0.005777953, b: 0.0060838335, a: 1}
+  m_IndirectSpecularColor: {r: 0.002731427, g: 0.0056947507, b: 0.0057336483, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17944,7 +17944,7 @@ GameObject:
   - component: {fileID: 1466329073}
   - component: {fileID: 1466329075}
   - component: {fileID: 1466329074}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: hair_gen_PLY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
